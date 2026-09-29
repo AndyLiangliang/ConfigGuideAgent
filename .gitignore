@@ -1,0 +1,9 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+memory_data/
+notes/
+outputs/*.md
+outputs/*.log
+outputs/*.json

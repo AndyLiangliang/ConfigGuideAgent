@@ -1,0 +1,22 @@
+[
+  {"sku": "SYN-PC-01", "name": "教学用台式机 A", "line": "PC", "spec": "入门办公，集显，8GB 内存", "budget_tier": "低", "hot": false, "margin_tier": "低", "lead_time_days": 21, "menu_path": ["教学配单系统", "终端", "台式机", "SYN-PC-01"]},
+  {"sku": "SYN-PC-02", "name": "教学用台式机 B", "line": "PC", "spec": "标准办公，16GB 内存，512GB 固态", "budget_tier": "中", "hot": false, "margin_tier": "中", "lead_time_days": 14, "menu_path": ["教学配单系统", "终端", "台式机", "SYN-PC-02"]},
+  {"sku": "SYN-PC-03", "name": "教学用台式机 C", "line": "PC", "spec": "热推办公，16GB 内存，一年保修", "budget_tier": "中", "hot": true, "margin_tier": "高", "lead_time_days": 7, "menu_path": ["教学配单系统", "终端", "台式机", "SYN-PC-03"]},
+  {"sku": "SYN-PC-04", "name": "教学用台式机 D", "line": "PC", "spec": "高配热推，32GB 内存，货期短", "budget_tier": "高", "hot": true, "margin_tier": "高", "lead_time_days": 3, "menu_path": ["教学配单系统", "终端", "台式机", "SYN-PC-04"]},
+  {"sku": "SYN-PC-05", "name": "教学用台式机 E", "line": "PC", "spec": "低配热推，8GB 内存", "budget_tier": "低", "hot": true, "margin_tier": "中", "lead_time_days": 5, "menu_path": ["教学配单系统", "终端", "台式机", "SYN-PC-05"]},
+  {"sku": "SYN-SV-01", "name": "教学用服务器 A", "line": "Server", "spec": "单路入门，适合小规模虚机", "budget_tier": "中", "hot": false, "margin_tier": "中", "lead_time_days": 20, "menu_path": ["教学配单系统", "机房", "服务器", "SYN-SV-01"]},
+  {"sku": "SYN-SV-02", "name": "教学用服务器 B", "line": "Server", "spec": "双路标准，货期较短", "budget_tier": "高", "hot": false, "margin_tier": "中", "lead_time_days": 8, "menu_path": ["教学配单系统", "机房", "服务器", "SYN-SV-02"]},
+  {"sku": "SYN-SV-03", "name": "教学用服务器 C", "line": "Server", "spec": "高毛利热推，冗余电源", "budget_tier": "高", "hot": true, "margin_tier": "高", "lead_time_days": 12, "menu_path": ["教学配单系统", "机房", "服务器", "SYN-SV-03"]},
+  {"sku": "SYN-SV-04", "name": "教学用服务器 D", "line": "Server", "spec": "热推机型，货期优先", "budget_tier": "高", "hot": true, "margin_tier": "中", "lead_time_days": 6, "menu_path": ["教学配单系统", "机房", "服务器", "SYN-SV-04"]},
+  {"sku": "SYN-SV-05", "name": "教学用服务器 E", "line": "Server", "spec": "低配单路，货期长", "budget_tier": "低", "hot": false, "margin_tier": "低", "lead_time_days": 30, "menu_path": ["教学配单系统", "机房", "服务器", "SYN-SV-05"]},
+  {"sku": "SYN-ST-01", "name": "教学用存储 A", "line": "Storage", "spec": "混合闪存入门柜", "budget_tier": "中", "hot": false, "margin_tier": "中", "lead_time_days": 18, "menu_path": ["教学配单系统", "机房", "存储", "SYN-ST-01"]},
+  {"sku": "SYN-ST-02", "name": "教学用存储 B", "line": "Storage", "spec": "标准双控，货期较短", "budget_tier": "高", "hot": false, "margin_tier": "中", "lead_time_days": 9, "menu_path": ["教学配单系统", "机房", "存储", "SYN-ST-02"]},
+  {"sku": "SYN-ST-03", "name": "教学用存储 C", "line": "Storage", "spec": "高毛利热推，全闪", "budget_tier": "高", "hot": true, "margin_tier": "高", "lead_time_days": 15, "menu_path": ["教学配单系统", "机房", "存储", "SYN-ST-03"]},
+  {"sku": "SYN-ST-04", "name": "教学用存储 D", "line": "Storage", "spec": "热推机型，货期最短", "budget_tier": "中", "hot": true, "margin_tier": "高", "lead_time_days": 4, "menu_path": ["教学配单系统", "机房", "存储", "SYN-ST-04"]},
+  {"sku": "SYN-ST-05", "name": "教学用存储 E", "line": "Storage", "spec": "低配单控，货期长", "budget_tier": "低", "hot": false, "margin_tier": "低", "lead_time_days": 25, "menu_path": ["教学配单系统", "机房", "存储", "SYN-ST-05"]},
+  {"sku": "SYN-SW-01", "name": "教学用交换机 A", "line": "Switch", "spec": "8 口千兆接入", "budget_tier": "低", "hot": false, "margin_tier": "低", "lead_time_days": 10, "menu_path": ["教学配单系统", "网络", "交换机", "SYN-SW-01"]},
+  {"sku": "SYN-SW-02", "name": "教学用交换机 B", "line": "Switch", "spec": "24 口千兆，标准档", "budget_tier": "中", "hot": false, "margin_tier": "中", "lead_time_days": 12, "menu_path": ["教学配单系统", "网络", "交换机", "SYN-SW-02"]},
+  {"sku": "SYN-SW-03", "name": "教学用交换机 C", "line": "Switch", "spec": "24 口热推，带万兆上行", "budget_tier": "中", "hot": true, "margin_tier": "高", "lead_time_days": 6, "menu_path": ["教学配单系统", "网络", "交换机", "SYN-SW-03"]},
+  {"sku": "SYN-SW-04", "name": "教学用交换机 D", "line": "Switch", "spec": "48 口热推，货期短", "budget_tier": "高", "hot": true, "margin_tier": "高", "lead_time_days": 4, "menu_path": ["教学配单系统", "网络", "交换机", "SYN-SW-04"]},
+  {"sku": "SYN-SW-05", "name": "教学用交换机 E", "line": "Switch", "spec": "48 口标准，冗余电源", "budget_tier": "高", "hot": false, "margin_tier": "中", "lead_time_days": 8, "menu_path": ["教学配单系统", "网络", "交换机", "SYN-SW-05"]}
+]

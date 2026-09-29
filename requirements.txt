@@ -1,0 +1,4 @@
+hello-agents>=0.2.7
+python-dotenv>=1.0.0
+a2a-sdk==0.2.16
+flask
