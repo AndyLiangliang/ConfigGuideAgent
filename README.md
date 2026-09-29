@@ -4,48 +4,38 @@
 
 目录是 20 条合成 SKU，名称、规格和菜单都是教学数据，不是任何厂商的真实价格或菜单。热推是目录里标了热推的高毛利型号。`qty` 是采购台数。
 
-作者：梁宇恒
-
 情景记忆用 Qdrant 云集群，集合名固定为 `configguide_episodic`。对话模型、嵌入和 Qdrant 的键写在本目录 `.env`，或写在 Hello-Agents 仓库根目录的 `.env`。每一项是做什么的、哪条命令要用，见 `.env.example`。不要提交填好密钥的 `.env`。
 
 case4 必须在新进程里跑。上一进程退出后，它仍要想起星海制造上次的产品线和数量，只把预算改成高，热推从 `SYN-PC-03` 换成 `SYN-PC-04`。
 
 ## 四条例的期望型号
 
-| 用例 | 标准方案 | 热推方案 |
-|---|---|---|
-| case1，PC，预算中 | SYN-PC-02 | SYN-PC-03 |
-| case2，Server，预算高，货期优先 | SYN-SV-02 | SYN-SV-04 |
+
+| 用例                     | 标准方案      | 热推方案      |
+| ---------------------- | --------- | --------- |
+| case1，PC，预算中           | SYN-PC-02 | SYN-PC-03 |
+| case2，Server，预算高，货期优先  | SYN-SV-02 | SYN-SV-04 |
 | case2，Storage，预算高，货期优先 | SYN-ST-02 | SYN-ST-04 |
-| case3，缺预算 | 无 | 无 |
-| case4，沿用 case1，预算改为高 | SYN-PC-02 | SYN-PC-04 |
+| case3，缺预算              | 无         | 无         |
+| case4，沿用 case1，预算改为高   | SYN-PC-02 | SYN-PC-04 |
+
 
 case3 只追问，不查目录，也不调用撰写和质检。
 
 ## 课程能力
 
-| 章 | 在本项目中的组件 |
-|---|---|
-| 第 4 章 | `ReActAgent` 查证，`PlanAndSolveAgent` 写点击清单，`ReflectionAgent` 改稿 |
-| 第 7 章 | `HelloAgentsLLM`、`ToolRegistry`、`ReActAgent.add_tool` |
-| 第 8 章 | `MemoryTool` 的工作记忆和情景记忆。配单成功后写入的是需求，不是型号 |
-| 第 9 章 | `ContextBuilder` 打上下文包。`NoteTool` 只存结论，质检不读笔记 |
-| 第 10 章 | 目录是 MCP。撰写在 5001，质检在 5002，Host 用 `A2ATool` 交接 |
-| 第 12 章 | 型号用代码精确匹配，不把反思稿当合格线 |
+
+| 章      | 在本项目中的组件                                                       |
+| ------ | -------------------------------------------------------------- |
+| 第 4 章  | `ReActAgent` 查证，`PlanAndSolveAgent` 写点击清单，`ReflectionAgent` 改稿 |
+| 第 7 章  | `HelloAgentsLLM`、`ToolRegistry`、`ReActAgent.add_tool`          |
+| 第 8 章  | `MemoryTool` 的工作记忆和情景记忆。配单成功后写入的是需求，不是型号                       |
+| 第 9 章  | `ContextBuilder` 打上下文包。`NoteTool` 只存结论，质检不读笔记                  |
+| 第 10 章 | 目录是 MCP。撰写在 5001，质检在 5002，Host 用 `A2ATool` 交接                  |
+| 第 12 章 | 型号用代码精确匹配，不把反思稿当合格线                                            |
+
 
 第 11 章的强化学习、语义记忆和 ANP 没有启用。
-
-## 和旧项目的差异
-
-旧项目是 FastAPI 单接口加一次模型调用，交付网页工作台。本项目只保留「一句话配单」这条线。
-
-| 维度 | 旧项目 | 本项目 |
-|---|---|---|
-| 业务域 | 场景识别、选型、话术、架构延伸 | 一句话配单 |
-| 数据 | 型号由模型现场推荐 | 20 条合成 SKU |
-| 模型 | 智谱 GLM-4 | 仓库根目录 `.env` 里的模型 |
-| 架构 | 一次调用出 JSON | 三范式、MCP、A2A、记忆 |
-| 交付 | 前后端网页 | 命令行和 `outputs/eval.md` |
 
 ## 运行
 
